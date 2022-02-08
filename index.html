@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DREAMZCYCLING</title>
+    <link rel="icon" href="icons/cyclist2.png" style="color: white;">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+      <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+      <div id="img_here"></div>
+    </div>
+    <header
+      id="header"
+      class="animated slideInDown"
+      style="animation-delay: 1.8s"
+    >
+      <table>
+        <tr>
+          <td id="logo">DREAMZCYCLING</td>
+          <td id="navigation">
+            <a href="#work">WORK</a>
+            <a href="#bio">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+          </td>
+        </tr>
+      </table>
+    </header>
+    <table id="top_part">
+      <tr>
+        <td id="about" class="animated slideInLeft" style="animation-delay: 2s">
+          <h1 style="font-size: 2em;">
+            Let's go for a ride & take pictures through marvelous Las Vegas.
+          </h1>
+          <a href="#contact"
+            ><button class="btn_one">Hit me up</button><br
+          /></a>
+          <table>
+            <tr>
+              <td class="animated zoomIn" style="animation-delay: 2.8s">
+                <a
+                  class="social"
+                  href="https://www.strava.com/athletes/44358139"
+                  target="_blank"
+                ><img src="icons/strava.jpg" alt="instagram" style="width: 23px; border-radius: 35%;" class="social"></a>
+              </td>
+              <td class="animated zoomIn" style="animation-delay: 2.6s">
+                <a class="social" href="https://www.instagram.com/mr.brownpride/" target="_blank"><img class="social" src="icons/instagram.png" alt="instagram" style="width: 23px;"></a>
+              </td>
+              <td class="animated zoomIn" style="animation-delay: 2.2s">
+                <a class="social" href="https://www.facebook.com/profile.php?id=100058971386149" target="_blank"><img class="social" src="icons/facebook.png" alt="facebook" style="width: 23px;"></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td
+          id="rightImage"
+          class="animated jackInTheBox"
+          style="animation-delay: 2.2s"
+        ></td>
+      </tr>
+    </table>
+    <div id="work" style="background-color: rgb(247, 252, 255);">
+      <h1>work</h1>
+      <div id="photos">
+        <img onclick="magnify($(this).attr('src'))" src="bike4.jpg" />
+        <img onclick="magnify($(this).attr('src'))" src="bike5.jpg" />
+        <img onclick="magnify($(this).attr('src'))" src="bike6.jpg" />
+        <img onclick="magnify($(this).attr('src'))" src="bike7.jpg" />
+        <img onclick="magnify($(this).attr('src'))" src="bike8.jpg" />
+        <img onclick="magnify($(this).attr('src'))" src="bike13.jpg" />
+        <img onclick="magnify($(this).attr('src'))" src="bike16.webp" />
+        <img onclick="magnify($(this).attr('src'))" src="bike10.jpg" />
+        <img onclick="magnify($(this).attr('src'))" src="bike12.jpg" />
+      </div>
+        <div style="text-align: center">
+      <a href="pics.html" 
+        ><button class="btn_more">MORE PHOTOS</button></a
+      >
+    </div>
+    </div>
+   
+    <div id="bio">
+      <h1>About</h1>
+      <!-- text and pic side by side -->
+      <div class="row">
+        <div class="column">
+    <img src="r4.png" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column">
+    <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 1.4em;">
+         I welcome you to my world of cycling photography, My name is Rafael and scattered around on my page are photos taken all over the beautiful city of Las Vegas. I invite you to some of my favorite trails or routes around the valley for us to go riding and do some photshoots on around beautiful Las Vegas.</p>
+    <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 1.4em;">
+        I am at your service to capture that shot of your bike that you have always wanted and will bring out its true beauty with the click of a button. Below, I have a list of the most popular trails, but I am always open to a new adventure or path. I await our cycling photography adventure.
+      </p>
+      
+  </div>
+</div>
+<br>
+      <!-- vegas bike rides -->
+      <td style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                 <i class="fas fa-thumbtack" style="margin-left: 5px; color: red;"></i>  Las Vegas Strip
+                  <i class="fas fa-thumbtack" style="margin-left: 15px;color: red;"></i>  Downtown Freemont
+                   <i class="fas fa-thumbtack" style="margin-left: 15px;color: red;"></i>  Hooverdam Loop
+                         <i class="fas fa-thumbtack" style="margin-left: 15px;color: red;"></i>  Red Rock Loop
+                        <i class="fas fa-thumbtack" style="margin-left: 15px;color: red;"></i>  Mt. Charleston
+                  
+                     </td>
+    </div>
+    <div id="contact" style="background-color: rgb(247, 252, 255);">
+      <h1 id="something">contact</h1>
+      <table>
+        <tr>
+          <td>
+            <div id="inner_div">
+              <table id="inner_table">
+                <tr>
+                  <td><i class="fas fa-phone"></i> &nbsp; 970-404-2531</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-at"></i> &nbsp; rafa_garza@protonmail.com</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div id="address">Las Vegas, NV</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <a class="social" href="https://www.strava.com/athletes/44358139" target="_blank">
+                      <img src="icons/strava.jpg" alt="strava" style="width: 23px; border-radius: 35%;" class="social"></a>
+                    <a class="social" href="https://www.instagram.com/mr.brownpride/"
+                      target="_blank"><img src="icons/instagram.png" alt="instagram" style="width: 23px;" class="social"></a>
+                      <a class="social" href="https://www.facebook.com/profile.php?id=100058971386149"
+                      target="_blank"><img src="icons/facebook.png" alt="facebook" style="width: 23px;" class="social"></a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td>
+            <form action="https://formsubmit.co/roman_garza@protonmail.com" method="post">
+              <label for="rides" style="padding: 5px 0px;border-bottom: 4px solid rgb(30,144,255);width: 11%;">Choose a ride:</label>
+                <select name="rides" id="rides" class="dropdown">
+                  <option value="1">Las Vegas Strip</option>
+                  <option value="2">Downtown Freemont</option>
+                  <option value="3">RedRock Loop</option>
+                  <option value="4">Smash Bro Monday</option>
+                  <option value="5">Wetlands Park</option>
+                  <option value="6">215 Trail</option>
+                  <option value="7">Humpday Ride</option>
+                  <option value="8">Alta west/east</option>
+                  <option value="9">Raiders Stadium</option>
+                  <option value="10">Lake Mead</option>
+                  <option value="11">Mt. Frenchman</option>
+                  <option value="12">Craig Ranch</option>
+                  <option value="14">Floyd Lamb Park</option>
+                  <option value="15">Blue Diamond Loop</option>
+                  <option value="16">Mt. Charleston</option>
+              <input type="hidden" name="_subject" value="New email for Cycling Las Vegas">
+              <input type="hidden" name="_next" value="index.html">
+              <input type="text" placeholder="name" required />
+              <input type="email" placeholder="email" required /><br />
+              <textarea placeholder="let's go for ride" required rows="5"></textarea
+              ><br />
+              <button class="btn_one" type="submit">send</button>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="footer" style="background-color: rgb(30,144,255); color: white;">
+      <p style="font-family: 'Courier New', Courier, monospace">
+        copyright &copy; property of mr.brownpride Co.
+        <span id="date">2022</span> all rights reserved
+      </p>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
+
+<!-- 
+- about, work, contact
+- instagram(both), faceboook, strava, dropbox?
+- button to link to more pics
+- capture fully the purpose of the web page
+- fonticon 
+
+ -->
+
+
+
+
+

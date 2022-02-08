@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAMZCYCLING</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script></script>
+</head>
+<body>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Monoton&display=swap");
+
+
+body {
+  margin: 0;
+  font-family: "Monoton", cursive;
+}
+
+#title{
+  border-bottom: 4px solid rgb(30,144,255);
+  padding-bottom: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+/* left corner back btn */
+a {
+    color:rgb(30,144,255);
+    position: absolute;
+    left: 10px;
+    font-size: 40px;
+    padding: 4px 10px;
+    border-radius:50%;
+    background:transparent;
+    transition:0.4s ease-in-out;
+    font-weight:bold;
+    margin:0px 8px;
+}
+a:hover { 
+    cursor: pointer;
+    color:#fff;
+    background:rgb(30,144,255);
+    box-shadow:0px 10px 30px rgb(30,144,255, 0.8);
+}
+
+/* grid styling */
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+img:hover {
+  transform: scale(1.03);
+  transition: 0.4s ease-in-out;
+}
+
+/* footer */
+
+#footer {
+  width: 100%;
+  padding: 10vh 0px;
+  text-align: center;
+  font-weight: bold;
+}
+#footer a {
+  text-decoration: none;
+}
+
+/* back to top btn styling */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 16px;
+  transition:0.4s ease-in-out;
+}
+
+#myBtn:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color:#fff;
+  background:rgb(30,144,255);
+  box-shadow:0px 10px 30px rgb(30,144,255);
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <a href="index.html"><i class="far fa-arrow-alt-circle-left"></i></a>
+  <h1 id="title">BIKE GALLERY</h1>
+  <p>Check out my work</p>
+</div>
+
+
+<div class="row"> 
+  <div class="column">
+    <img src="bike4.jpg" style="width:100%">
+    <img src="bike5.jpg" style="width:100%">
+    <img src="bike6.jpg" style="width:100%">
+    <img src="bike7.jpg" style="width:100%">
+    <img src="bike8.jpg" style="width:100%">
+    <img src="bike9.jpg" style="width:100%">
+    <img src="bike10.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="bike10.jpg" style="width:100%">
+    <img src="bike12.jpg" style="width:100%">
+    <img src="bike13.jpg" style="width:100%">
+    <img src="bike10.jpg" style="width:100%">
+    <img src="bike12.jpg" style="width:100%">
+    <img src="bike13.jpg" style="width:100%">
+    <img src="bike13.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="bike4.jpg" style="width:100%">
+    <img src="bike5.jpg" style="width:100%">
+    <img src="bike6.jpg" style="width:100%">
+    <img src="bike7.jpg" style="width:100%">
+    <img src="bike8.jpg" style="width:100%">
+    <img src="bike9.jpg" style="width:100%">
+    <img src="bike10.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="bike4.jpg" style="width:100%">
+    <img src="bike5.jpg" style="width:100%">
+    <img src="bike6.jpg" style="width:100%">
+    <img src="bike7.jpg" style="width:100%">
+    <img src="bike8.jpg" style="width:100%">
+    <img src="bike9.jpg" style="width:100%">
+    <img src="bike10.jpg" style="width:100%">
+  </div>
+</div>
+<!-- back to top btn -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-arrow-alt-circle-up" style="font-size: 50px;"></i></button>
+<br> <br>
+
+
+<!-- footer -->
+<div id="footer" style="background-color: rgb(30,144,255); color: white;">
+      <p style="font-family: 'Courier New', Courier, monospace">
+        copyright &copy; property of mr.brownpride Co.
+        <span id="date">2022</span> all rights reserved
+      </p>
+    </div>
+
+ <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
+
+<!-- 
+-display all pics
+-back button - upper left
+-back to top arrow button -right side
+- footer?
+ 
